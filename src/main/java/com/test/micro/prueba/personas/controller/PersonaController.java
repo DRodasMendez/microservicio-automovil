@@ -19,7 +19,8 @@ public class PersonaController implements Serializable{
     @Autowired
     PersonaService personaservice;
     
-    @CrossOrigin(origins = "https://personasfront.onrender.com")
+    //@CrossOrigin(origins = "https://personasfront.onrender.com")
+    @CrossOrigin(origins = "http://localhost:5174")
     @GetMapping()
     public List<Persona> devolverGente(){
         return personaservice.devolverLista();
