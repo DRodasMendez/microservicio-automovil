@@ -18,4 +18,11 @@ public class PersonaService {
     public List<Persona> devolverLista(){
         return personaRepository.findAll();
     }
+    public Persona guardarPersona(Persona persona){
+    return personaRepository.save(persona);
+    
+}
+    public Persona devolverUna(Long id){
+    return personaRepository.findById(id).orElse(null);
+} 
 }

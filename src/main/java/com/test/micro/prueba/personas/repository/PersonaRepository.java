@@ -1,5 +1,6 @@
 package com.test.micro.prueba.personas.repository;
 
+
 import com.test.micro.prueba.personas.entity.Persona;
 import org.springframework.data.jpa.repository.JpaRepository;
 
