@@ -17,4 +17,7 @@ public class AutomovilService {
     public List<Automovil> devolverAutos(){
         return automovilRepository.findAll();
     }
+    public Automovil guardarAutomovil(Automovil automovil){
+    return automovilRepository.save(automovil);
+}
 }
