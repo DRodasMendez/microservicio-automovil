@@ -16,4 +16,7 @@ public class NavioService {
     public List<Navio> consultaNavios() {
         return navioRepository.findAll();
     }
+    public Navio guardarNavio(Navio navio){
+    return navioRepository.save(navio);
+}
 }

@@ -15,6 +15,11 @@ public class NavioController {
     @Autowired
     private NavioService navioService;
 
+    @PostMapping("/marina")
+    public Navio guardar(@RequestBody Navio navio){
+        return navioService.guardarNavio(navio);
+    }
+
     @GetMapping("/marina")
     public List<Navio> consultaNavios() {
         return navioService.consultaNavios();
